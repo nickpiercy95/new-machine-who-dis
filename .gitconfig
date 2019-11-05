@@ -1,0 +1,9 @@
+[user]
+    
+[alias]
+    graph = log --graph --decorate --pretty=oneline --abbrev-commit
+[fetch]
+    prune = true
+[core]
+    editor = vim
+    autocrlf = true
