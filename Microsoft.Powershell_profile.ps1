@@ -1,7 +1,7 @@
 # If we're in system32, change to $env:HOME
 $CurrentDir = $(Get-Location).Path
 if ($CurrentDir -eq "C:\WINDOWS\system32") {
-    Set-Location $env:HOME
+    Set-Location $HOME
 }
 
 Set-Alias ifconfig ipconfig
