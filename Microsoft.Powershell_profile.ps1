@@ -16,5 +16,8 @@ if (Test-Path($ChocolateyProfile)) {
 
 Import-Module Posh-Git
 
-# shell-style tab completion
+# Shell-style tab completion
 Set-PSReadlineKeyHandler -Key Tab -Function Complete
+
+# Disable bell
+Set-PSReadlineOption -BellStyle None
