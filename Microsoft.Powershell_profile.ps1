@@ -1,4 +1,4 @@
-# If we're in system32, change to $env:HOME
+# If we're in system32, change to $HOME
 $CurrentDir = $(Get-Location).Path
 if ($CurrentDir -eq "C:\WINDOWS\system32") {
     Set-Location $HOME
