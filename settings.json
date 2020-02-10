@@ -46,6 +46,9 @@
     "workbench.settings.enableNaturalLanguageSearch": false,
     "workbench.settings.editor": "json",
     "workbench.startupEditor": "welcomePageInEmptyWorkbench",
+    "[xml]": {
+        "editor.tabSize": 2
+    },
     "[yaml]": {
         "editor.tabSize": 2
     },
