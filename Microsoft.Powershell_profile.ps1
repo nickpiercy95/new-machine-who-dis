@@ -1,5 +1,5 @@
 # If we're in system32, change to $HOME
-$CurrentDir = $(Get-Location).Path
+$CurrentDir = (Get-Location).Path
 if ($CurrentDir -eq "C:\WINDOWS\system32") {
     Set-Location $HOME
 }
@@ -16,7 +16,7 @@ if (Test-Path($ChocolateyProfile)) {
 
 Import-Module Posh-Git
 
-# Shell-style tab completion
+# Unix-style tab completion
 Set-PSReadlineKeyHandler -Key Tab -Function Complete
 
 # Disable bell

@@ -2,6 +2,7 @@ alias ls='ls -lhAB --color=auto'
 alias mv='mv -v'
 alias cp='cp -v'
 alias grep='grep --color=always'
+alias python='winpty python'
 
 function start-ssh-agent {
     eval $(ssh-agent)
