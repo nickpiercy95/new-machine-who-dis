@@ -48,7 +48,7 @@
             {
                 "guid": "{00000000-0000-0000-ba54-000000000002}",
                 "name": "Git bash",
-                "commandline": "bash.exe",
+                "commandline": "%PROGRAMFILES%\\Git\\bin\\bash.exe",
                 "icon": "%PROGRAMFILES%\\Git\\mingw64\\share\\git\\git-for-windows.ico",
                 "startingDirectory": "%USERPROFILE%",
                 "background": "#000000",
@@ -59,6 +59,12 @@
                 "hidden": false,
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure"
+            },
+            {
+                "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+                "hidden": false,
+                "name": "WSL - Ubuntu",
+                "commandline" : "wsl.exe ~"
             }
         ]
     },

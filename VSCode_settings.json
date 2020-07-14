@@ -28,6 +28,7 @@
         "**/.factorypath": true,
         "**/.metadata": true,
         "**/.project": true,
+        "**/*.pyc": true,
         "**/RemoteSystemsTempFiles": true,
         "**/.settings": true
     },
@@ -38,7 +39,7 @@
     "python.testing.autoTestDiscoverOnSaveEnabled": true,
     "telemetry.enableTelemetry": false,
     "terminal.integrated.enableBell": false,
-    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
     "typescript.suggestionActions.enabled": false,
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "window.restoreWindows": "folders",

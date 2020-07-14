@@ -7,11 +7,11 @@ if ((Get-Location).Path -eq "C:\WINDOWS\system32") {
 $env:GIT_SSH_COMMAND = (Get-Command ssh).Source.Replace('\' ,'/')
 
 Set-Alias ifconfig ipconfig
-Set-Alias vim "C:\Program Files\Git\usr\bin\vim.exe"
+Set-Alias host Resolve-DnsName
 
 function xx {exit}
 
-# Import Chocolatey profile
+# Chocolatey profile
 $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
 if (Test-Path($ChocolateyProfile)) {
   Import-Module "$ChocolateyProfile"
@@ -24,3 +24,4 @@ Set-PSReadlineKeyHandler -Key Tab -Function Complete
 
 # Disable bell
 Set-PSReadlineOption -BellStyle None
+
