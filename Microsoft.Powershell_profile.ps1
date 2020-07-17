@@ -8,6 +8,7 @@ $env:GIT_SSH_COMMAND = (Get-Command ssh).Source.Replace('\' ,'/')
 
 Set-Alias ifconfig ipconfig
 Set-Alias host Resolve-DnsName
+Remove-Item alias:diff -Force
 
 function xx {exit}
 
@@ -24,4 +25,3 @@ Set-PSReadlineKeyHandler -Key Tab -Function Complete
 
 # Disable bell
 Set-PSReadlineOption -BellStyle None
-
