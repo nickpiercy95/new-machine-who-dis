@@ -3,7 +3,6 @@ if ((Get-Location).Path -eq "C:\WINDOWS\system32") {
 }
 
 # Tell Git to use the SSH library included in Windows 10 instead of its own, to avoid ssh-agent shenanigans.
-                                                                                            
 $env:GIT_SSH_COMMAND = (Get-Command ssh).Source.Replace("\" ,"/")
 
 Set-Alias ifconfig ipconfig
