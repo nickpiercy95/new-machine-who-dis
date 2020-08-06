@@ -1,7 +1,8 @@
 [user]
-    
+    name = Nick Piercy
+    email = 
 [alias]
-    graph = log --graph --decorate --pretty=oneline --abbrev-commit
+    graph = log --graph --oneline
 [fetch]
     prune = true
 [core]
