@@ -20,6 +20,9 @@
     "explorer.openEditors.visible": 0,
     "extensions.autoCheckUpdates": true,
     "files.autoSave": "onFocusChange",
+    "files.associations": {
+        "**/Vagrantfile": "ruby"
+    },
     "files.enableTrash": true,
     "files.exclude": {
         "**/*~*": true,
