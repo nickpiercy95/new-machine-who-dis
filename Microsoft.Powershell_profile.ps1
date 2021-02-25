@@ -17,9 +17,9 @@ if (Test-Path "$ChocolateyProfile") {
 }
 
 Import-Module Posh-Git
-$GitPromptSettings.DefaultForegroundColor = [ConsoleColor]::DarkGreen
 $GitPromptSettings.DefaultPromptAbbreviateHomeDirectory = $true
-$GitPromptSettings.DefaultPromptPrefix = "$(whoami) "
+$GitPromptSettings.DefaultPromptPrefix.Text = "$(whoami)@$(hostname) "
+$GitPromptSettings.DefaultPromptPrefix.ForegroundColor = [ConsoleColor]::DarkGreen
 
 # Unix-style shortcuts
 Set-PSReadlineKeyHandler -Key Tab -Function Complete
